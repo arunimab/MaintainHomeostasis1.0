@@ -15,6 +15,7 @@
 		BA2501281C5FC10E00AA204E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2501271C5FC10E00AA204E /* Assets.xcassets */; };
 		BA25012B1C5FC10E00AA204E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2501291C5FC10E00AA204E /* LaunchScreen.storyboard */; };
 		BA2501361C5FC10E00AA204E /* BalloonButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2501351C5FC10E00AA204E /* BalloonButtonTests.swift */; };
+		BAEBA77D1C6112AA00E099BB /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBA77C1C6112AA00E099BB /* Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		BA2501311C5FC10E00AA204E /* BalloonButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BalloonButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA2501351C5FC10E00AA204E /* BalloonButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonButtonTests.swift; sourceTree = "<group>"; };
 		BA2501371C5FC10E00AA204E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAEBA77C1C6112AA00E099BB /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				BA25011E1C5FC10E00AA204E /* GameScene.sks */,
 				BA2501201C5FC10E00AA204E /* GameScene.swift */,
 				BA2501221C5FC10E00AA204E /* GameViewController.swift */,
+				BAEBA77C1C6112AA00E099BB /* Button.swift */,
 				BA2501241C5FC10E00AA204E /* Main.storyboard */,
 				BA2501271C5FC10E00AA204E /* Assets.xcassets */,
 				BA2501291C5FC10E00AA204E /* LaunchScreen.storyboard */,
@@ -207,6 +210,7 @@
 				BA2501211C5FC10E00AA204E /* GameScene.swift in Sources */,
 				BA2501231C5FC10E00AA204E /* GameViewController.swift in Sources */,
 				BA25011D1C5FC10E00AA204E /* AppDelegate.swift in Sources */,
+				BAEBA77D1C6112AA00E099BB /* Button.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +401,7 @@
 				BA25013C1C5FC10E00AA204E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA25013D1C5FC10E00AA204E /* Build configuration list for PBXNativeTarget "BalloonButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +410,7 @@
 				BA25013F1C5FC10E00AA204E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
