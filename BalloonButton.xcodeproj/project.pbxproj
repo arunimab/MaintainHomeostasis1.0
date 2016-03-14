@@ -17,7 +17,6 @@
 		BA2501361C5FC10E00AA204E /* BalloonButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2501351C5FC10E00AA204E /* BalloonButtonTests.swift */; };
 		BA60FD211C738CC000C9ACCF /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA60FD201C738CC000C9ACCF /* Settings.swift */; };
 		BA60FD231C738CF700C9ACCF /* DataProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA60FD221C738CF700C9ACCF /* DataProcessing.swift */; };
-		BAEBA77D1C6112AA00E099BB /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBA77C1C6112AA00E099BB /* Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +44,6 @@
 		BA2501371C5FC10E00AA204E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA60FD201C738CC000C9ACCF /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		BA60FD221C738CF700C9ACCF /* DataProcessing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProcessing.swift; sourceTree = "<group>"; };
-		BAEBA77C1C6112AA00E099BB /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +89,6 @@
 				BA25011E1C5FC10E00AA204E /* GameScene.sks */,
 				BA2501201C5FC10E00AA204E /* GameScene.swift */,
 				BA2501221C5FC10E00AA204E /* GameViewController.swift */,
-				BAEBA77C1C6112AA00E099BB /* Button.swift */,
 				BA2501241C5FC10E00AA204E /* Main.storyboard */,
 				BA60FD201C738CC000C9ACCF /* Settings.swift */,
 				BA60FD221C738CF700C9ACCF /* DataProcessing.swift */,
@@ -216,7 +213,6 @@
 				BA2501211C5FC10E00AA204E /* GameScene.swift in Sources */,
 				BA2501231C5FC10E00AA204E /* GameViewController.swift in Sources */,
 				BA25011D1C5FC10E00AA204E /* AppDelegate.swift in Sources */,
-				BAEBA77D1C6112AA00E099BB /* Button.swift in Sources */,
 				BA60FD231C738CF700C9ACCF /* DataProcessing.swift in Sources */,
 				BA60FD211C738CC000C9ACCF /* Settings.swift in Sources */,
 			);
@@ -351,6 +347,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ISD-196.BalloonButton";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -362,6 +359,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ISD-196.BalloonButton";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
