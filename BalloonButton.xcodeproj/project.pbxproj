@@ -15,8 +15,11 @@
 		BA2501281C5FC10E00AA204E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2501271C5FC10E00AA204E /* Assets.xcassets */; };
 		BA25012B1C5FC10E00AA204E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2501291C5FC10E00AA204E /* LaunchScreen.storyboard */; };
 		BA2501361C5FC10E00AA204E /* BalloonButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2501351C5FC10E00AA204E /* BalloonButtonTests.swift */; };
+		BA3403331C986604002AE9BF /* Graphing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3403321C986604002AE9BF /* Graphing.swift */; };
 		BA60FD211C738CC000C9ACCF /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA60FD201C738CC000C9ACCF /* Settings.swift */; };
 		BA60FD231C738CF700C9ACCF /* DataProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA60FD221C738CF700C9ACCF /* DataProcessing.swift */; };
+		BAF5EFC01C9867B400B27F2F /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3403261C9865C7002AE9BF /* Charts.framework */; };
+		BAF5EFC11C9867B400B27F2F /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BA3403261C9865C7002AE9BF /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +30,56 @@
 			remoteGlobalIDString = BA2501181C5FC10E00AA204E;
 			remoteInfo = BalloonButton;
 		};
+		BA3403251C9865C7002AE9BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA34031E1C9865C6002AE9BF /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
+		BA3403271C9865C7002AE9BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA34031E1C9865C6002AE9BF /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A52C5C371BAC5CA400594CDD;
+			remoteInfo = "Charts-TV";
+		};
+		BA3403291C9865C7002AE9BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA34031E1C9865C6002AE9BF /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65B3F5BF1C7370BE000983D0;
+			remoteInfo = "Charts-OSX";
+		};
+		BA34032B1C9865C7002AE9BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA34031E1C9865C6002AE9BF /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06AEE7A21BDC3F8B009875AE;
+			remoteInfo = ChartsTests;
+		};
+		BAF5EFC21C9867B400B27F2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA34031E1C9865C6002AE9BF /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BAF5EFC41C9867B500B27F2F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BAF5EFC11C9867B400B27F2F /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BA2501191C5FC10E00AA204E /* BalloonButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalloonButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +94,8 @@
 		BA2501311C5FC10E00AA204E /* BalloonButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BalloonButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA2501351C5FC10E00AA204E /* BalloonButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonButtonTests.swift; sourceTree = "<group>"; };
 		BA2501371C5FC10E00AA204E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA34031E1C9865C6002AE9BF /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/ios-charts-master/Charts/Charts.xcodeproj"; sourceTree = "<group>"; };
+		BA3403321C986604002AE9BF /* Graphing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graphing.swift; sourceTree = "<group>"; };
 		BA60FD201C738CC000C9ACCF /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		BA60FD221C738CF700C9ACCF /* DataProcessing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProcessing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF5EFC01C9867B400B27F2F /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +122,7 @@
 		BA2501101C5FC10E00AA204E = {
 			isa = PBXGroup;
 			children = (
+				BA34031E1C9865C6002AE9BF /* Charts.xcodeproj */,
 				BA25011B1C5FC10E00AA204E /* BalloonButton */,
 				BA2501341C5FC10E00AA204E /* BalloonButtonTests */,
 				BA25011A1C5FC10E00AA204E /* Products */,
@@ -95,6 +151,7 @@
 				BA2501271C5FC10E00AA204E /* Assets.xcassets */,
 				BA2501291C5FC10E00AA204E /* LaunchScreen.storyboard */,
 				BA25012C1C5FC10E00AA204E /* Info.plist */,
+				BA3403321C986604002AE9BF /* Graphing.swift */,
 			);
 			path = BalloonButton;
 			sourceTree = "<group>";
@@ -108,6 +165,17 @@
 			path = BalloonButtonTests;
 			sourceTree = "<group>";
 		};
+		BA34031F1C9865C6002AE9BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA3403261C9865C7002AE9BF /* Charts.framework */,
+				BA3403281C9865C7002AE9BF /* Charts.framework */,
+				BA34032A1C9865C7002AE9BF /* Charts.framework */,
+				BA34032C1C9865C7002AE9BF /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,10 +186,12 @@
 				BA2501151C5FC10E00AA204E /* Sources */,
 				BA2501161C5FC10E00AA204E /* Frameworks */,
 				BA2501171C5FC10E00AA204E /* Resources */,
+				BAF5EFC41C9867B500B27F2F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BAF5EFC31C9867B400B27F2F /* PBXTargetDependency */,
 			);
 			name = BalloonButton;
 			productName = BalloonButton;
@@ -176,6 +246,12 @@
 			mainGroup = BA2501101C5FC10E00AA204E;
 			productRefGroup = BA25011A1C5FC10E00AA204E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BA34031F1C9865C6002AE9BF /* Products */;
+					ProjectRef = BA34031E1C9865C6002AE9BF /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				BA2501181C5FC10E00AA204E /* BalloonButton */,
@@ -183,6 +259,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BA3403261C9865C7002AE9BF /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = BA3403251C9865C7002AE9BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BA3403281C9865C7002AE9BF /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = BA3403271C9865C7002AE9BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BA34032A1C9865C7002AE9BF /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = BA3403291C9865C7002AE9BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BA34032C1C9865C7002AE9BF /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = BA34032B1C9865C7002AE9BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BA2501171C5FC10E00AA204E /* Resources */ = {
@@ -211,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA2501211C5FC10E00AA204E /* GameScene.swift in Sources */,
+				BA3403331C986604002AE9BF /* Graphing.swift in Sources */,
 				BA2501231C5FC10E00AA204E /* GameViewController.swift in Sources */,
 				BA25011D1C5FC10E00AA204E /* AppDelegate.swift in Sources */,
 				BA60FD231C738CF700C9ACCF /* DataProcessing.swift in Sources */,
@@ -233,6 +341,11 @@
 			isa = PBXTargetDependency;
 			target = BA2501181C5FC10E00AA204E /* BalloonButton */;
 			targetProxy = BA2501321C5FC10E00AA204E /* PBXContainerItemProxy */;
+		};
+		BAF5EFC31C9867B400B27F2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Charts-iOS";
+			targetProxy = BAF5EFC21C9867B400B27F2F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -343,7 +456,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = BalloonButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ISD-196.BalloonButton";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,7 +470,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = BalloonButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ISD-196.BalloonButton";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -369,6 +486,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				INFOPLIST_FILE = BalloonButtonTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ISD-196.BalloonButtonTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -381,6 +499,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BalloonButtonTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ISD-196.BalloonButtonTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";

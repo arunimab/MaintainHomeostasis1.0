@@ -12,6 +12,7 @@ import UIKit
 //let myButton1 = SKSpriteNode(imageNamed: "RedSqaure-1")
 
 class GameScene: SKScene {
+    
     let myButton1 = SKSpriteNode(imageNamed: "RedSqaure-1")
     let myButton2 = SKSpriteNode(imageNamed: "RedSqaure-1")
     let myBalloon = SKSpriteNode(imageNamed: "Circle")
@@ -20,6 +21,8 @@ class GameScene: SKScene {
     let mySettings = SKSpriteNode (imageNamed: "Settings")
     let mySetPoint = SKSpriteNode (imageNamed: "YellowRing")
     let airOutput = SKAction.scaleTo(CGFloat(0.25), duration: NSTimeInterval(30))
+    var scaleFactor1 = retrieveDouble("airPump1")
+    var scaleFactor2 = retrieveDouble("airPump2")
     
     //Timer Variables
     var defaultseconds = Int(retrieveDouble("timer")!)
@@ -33,6 +36,7 @@ class GameScene: SKScene {
     
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
+        
         //Timer Label
         myTimer.text = "00:00"
         myTimer.fontSize = 25
@@ -58,11 +62,11 @@ class GameScene: SKScene {
         myBalloon.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
         myBalloon.xScale = 1.25
         myBalloon.yScale = 1.25
+        
         //Set Up Set Point
         mySetPoint.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
         mySetPoint.xScale = 1.5
         mySetPoint.yScale = 1.5
-        
         
         //Set Up Button1
         myButton1.position = CGPoint(x: CGRectGetMidX(self.frame) - 400, y: 150)
@@ -73,6 +77,10 @@ class GameScene: SKScene {
         myButton2.position = CGPoint(x: CGRectGetMidX(self.frame) + 400, y: 650)
         myButton2.xScale = 1.25
         myButton2.yScale = 1.25
+        
+        
+        
+        
         
         self.addChild(mySetPoint)
         self.addChild(myButton1)
@@ -106,6 +114,7 @@ class GameScene: SKScene {
             
         }
     }*/
+
     
     func timerCountDown() {
         
@@ -136,8 +145,9 @@ class GameScene: SKScene {
                 myBalloon.yScale = myBalloonVScale
             }
             else {
-                myBalloon.xScale = myBalloonHScale * 1.025
-                myBalloon.yScale = myBalloonVScale * 1.025
+                let totalScaleFactor1 = 1 + scaleFactor1!
+                myBalloon.xScale = myBalloonHScale * CGFloat(totalScaleFactor1)
+                myBalloon.yScale = myBalloonVScale * CGFloat(totalScaleFactor1)
             }
         }
         if myButton2.containsPoint(touch.locationInNode(self)) {
@@ -148,8 +158,9 @@ class GameScene: SKScene {
                 myBalloon.yScale = myBalloonVScale
             }
             else {
-                myBalloon.xScale = myBalloonHScale * 0.975
-                myBalloon.yScale = myBalloonVScale * 0.975
+                let totalScaleFactor2 = 1 + scaleFactor2!
+                myBalloon.xScale = myBalloonHScale *  CGFloat(totalScaleFactor2)
+                myBalloon.yScale = myBalloonVScale *  CGFloat(totalScaleFactor2)
             }
         }
         if myStartNode.containsPoint(touch.locationInNode(self)) {

@@ -12,6 +12,9 @@ import AVFoundation
 
 class Settings: UIViewController{
     
+    @IBOutlet weak var airPump1: UITextField!
+    @IBOutlet weak var airPump2: UITextField!
+    
     //timer start here
     
     @IBOutlet weak var timerIndicatorLabel: UILabel!
@@ -35,6 +38,16 @@ class Settings: UIViewController{
         
     }
     //timer end here
+    
+    @IBAction func airPump1(sender: UITextField) {
+        let airPumpScale1 = Double(airPump1.text!)
+        storeDouble("airPump1", value: airPumpScale1!)
+    }
+    
+    @IBAction func airPump2(sender: UITextField) {
+        let airPumpScale2 = Double(airPump2.text!)
+        storeDouble("airPump2", value: airPumpScale2!)
+    }
     
     override func viewDidLoad(){
         
