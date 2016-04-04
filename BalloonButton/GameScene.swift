@@ -91,8 +91,8 @@ class GameScene: SKScene {
         self.addChild(myStartNode)
         //self.addChild(mySettings)
         
-        //constantOutput()
     }
+    
     
     /*override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
        /* Called when a touch begins */
@@ -121,7 +121,7 @@ class GameScene: SKScene {
         minutes = timerCount / 60
         seconds = timerCount - (minutes * 60)
         
-        timerCount--
+        timerCount -= 1
         myTimer.text = String(format: "%02d:%02d", minutes, seconds)
         
         if myTimer.text == "00:00" {
@@ -132,12 +132,17 @@ class GameScene: SKScene {
     }
     
     func startTimer(){
-        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("timerCountDown"), userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(GameScene.timerCountDown), userInfo: nil, repeats: true)
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         let touch = touches.first!
+        
+        //increase size of balloon with click of button1
+        //don't increase if timer is not running
         if myButton1.containsPoint(touch.locationInNode(self)) {
+            //stop constantOutput
+            myBalloon.removeActionForKey("constantOutput")
             let myBalloonHScale = myBalloon.xScale
             let myBalloonVScale = myBalloon.yScale
             if (!timerRunning) {
@@ -148,9 +153,15 @@ class GameScene: SKScene {
                 let totalScaleFactor1 = 1 + scaleFactor1!
                 myBalloon.xScale = myBalloonHScale * CGFloat(totalScaleFactor1)
                 myBalloon.yScale = myBalloonVScale * CGFloat(totalScaleFactor1)
+                constantOutput()
             }
         }
+        
+        //increase size of balloon with click of button2
+        //don't increase if timer is not running
         if myButton2.containsPoint(touch.locationInNode(self)) {
+            //stop constantOutput
+            myBalloon.removeActionForKey("constantOutput")
             let myBalloonHScale = myBalloon.xScale
             let myBalloonVScale = myBalloon.yScale
             if (!timerRunning) {
@@ -161,12 +172,15 @@ class GameScene: SKScene {
                 let totalScaleFactor2 = 1 + scaleFactor2!
                 myBalloon.xScale = myBalloonHScale *  CGFloat(totalScaleFactor2)
                 myBalloon.yScale = myBalloonVScale *  CGFloat(totalScaleFactor2)
+                constantOutput()
             }
         }
+        
         if myStartNode.containsPoint(touch.locationInNode(self)) {
             if timerRunning == false {
                 startTimer()
                 timerRunning = true
+                constantOutput()
             }
         }
         //if mySettings.containsPoint(touch.locationInNode(self)) {
@@ -175,8 +189,12 @@ class GameScene: SKScene {
     }
     
     //NEED TO FIGURE THIS OUT!! 3/8/2016
-    /*
     func constantOutput () {
+        
+        let scaleAction = SKAction.scaleTo(0.0, duration: Double(timerCount))
+        myBalloon.runAction(scaleAction, withKey: "constantOutput")
+        
+    /*
         let myBalloonHScale = myBalloon.xScale
         let myBalloonVScale = myBalloon.yScale
         myBalloon.xScale = myBalloonHScale * 0.975
@@ -191,6 +209,6 @@ class GameScene: SKScene {
     }
    
     override func update(currentTime: CFTimeInterval) {
-        /* Called before each frame is rendered */
-    }*/
+        /* Called before each frame is rendered */*/
+    }
 }
