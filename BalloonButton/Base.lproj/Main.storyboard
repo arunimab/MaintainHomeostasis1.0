@@ -8,7 +8,7 @@
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="BalloonButton" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="HomeostasisZone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
                         <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
@@ -52,7 +52,7 @@
         <!--Graphing-->
         <scene sceneID="Uzg-gI-ktg">
             <objects>
-                <viewController id="OXk-bu-dQG" customClass="Graphing" customModule="BalloonButton" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OXk-bu-dQG" customClass="Graphing" customModule="HomeostasisZone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OrU-Kl-vMY"/>
                         <viewControllerLayoutGuide type="bottom" id="oAq-9P-Xzl"/>
@@ -84,6 +84,9 @@
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JYX-vK-vbR" customClass="LineChartView" customModule="Charts">
                                 <rect key="frame" x="20" y="97" width="560" height="468"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="468" id="Rk3-cx-q3F"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -104,7 +107,7 @@
         <!--Settings-->
         <scene sceneID="oFz-hC-avV">
             <objects>
-                <viewController id="m4b-tS-pay" customClass="Settings" customModule="BalloonButton" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="m4b-tS-pay" customClass="Settings" customModule="HomeostasisZone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zws-eH-tky"/>
                         <viewControllerLayoutGuide type="bottom" id="KoL-H2-PKe"/>
@@ -228,6 +231,67 @@
             </objects>
             <point key="canvasLocation" x="1182" y="366"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="V9F-gG-qrr">
+            <objects>
+                <viewController storyboardIdentifier="failScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ajj-kC-KP8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k1f-Sc-NVP"/>
+                        <viewControllerLayoutGuide type="bottom" id="zSN-iP-NWD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dms-nL-dpf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FAIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4r-Lj-Pge">
+                                <rect key="frame" x="191" y="124" width="219" height="74"/>
+                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="63"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Homeostasis was NOT Maintained" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tck-Xe-hrr">
+                                <rect key="frame" x="1" y="188" width="598" height="53"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.91857540930000003" blue="0.57847036949999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8o-jY-4zo">
+                                <rect key="frame" x="159" y="265" width="284" height="70"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="50"/>
+                                <state key="normal" title="TRY AGAIN">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.092421955149999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dC0-er-CPp">
+                                <rect key="frame" x="212" y="360" width="177" height="70"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="50"/>
+                                <state key="normal" title="HOME">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.092421955149999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.34268348437700402" blue="0.34503749580391052" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dC0-er-CPp" firstAttribute="top" secondItem="k8o-jY-4zo" secondAttribute="bottom" constant="25" id="1o3-Bp-rc9"/>
+                            <constraint firstItem="dC0-er-CPp" firstAttribute="centerX" secondItem="Dms-nL-dpf" secondAttribute="centerX" id="9eV-JK-ZfZ"/>
+                            <constraint firstItem="l4r-Lj-Pge" firstAttribute="top" secondItem="k1f-Sc-NVP" secondAttribute="bottom" constant="104" id="B88-vI-hbO"/>
+                            <constraint firstItem="tck-Xe-hrr" firstAttribute="centerX" secondItem="Dms-nL-dpf" secondAttribute="centerX" id="Jmq-1y-KUk"/>
+                            <constraint firstItem="zSN-iP-NWD" firstAttribute="top" secondItem="dC0-er-CPp" secondAttribute="bottom" constant="170" id="Rx2-AW-AHC"/>
+                            <constraint firstItem="l4r-Lj-Pge" firstAttribute="centerX" secondItem="Dms-nL-dpf" secondAttribute="centerX" id="WSr-DM-c8F"/>
+                            <constraint firstItem="tck-Xe-hrr" firstAttribute="top" secondItem="k1f-Sc-NVP" secondAttribute="bottom" constant="168" id="dnE-ww-JVi"/>
+                            <constraint firstItem="dC0-er-CPp" firstAttribute="top" secondItem="k8o-jY-4zo" secondAttribute="bottom" constant="25" id="jYX-BF-49v"/>
+                            <constraint firstItem="zSN-iP-NWD" firstAttribute="top" secondItem="l4r-Lj-Pge" secondAttribute="bottom" constant="402" id="rhj-LJ-1Vf"/>
+                            <constraint firstItem="k8o-jY-4zo" firstAttribute="centerX" secondItem="Dms-nL-dpf" secondAttribute="centerX" id="xyE-nK-XOo"/>
+                            <constraint firstItem="k8o-jY-4zo" firstAttribute="top" secondItem="tck-Xe-hrr" secondAttribute="bottom" constant="24" id="yEc-6d-bTi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="08V-n2-jQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="742" y="1730"/>
+        </scene>
         <!--Main Menu-->
         <scene sceneID="Wzn-oG-zqh">
             <objects>
@@ -260,7 +324,6 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.092421955149999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="saveChart:" destination="OXk-bu-dQG" eventType="touchUpInside" id="fTu-cW-YX3"/>
                                     <segue destination="m4b-tS-pay" kind="show" id="eRB-A1-7ma"/>
                                 </connections>
                             </button>
@@ -272,7 +335,6 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.092421955149999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="saveChart:" destination="OXk-bu-dQG" eventType="touchUpInside" id="LLq-3v-j8p"/>
                                     <segue destination="m4b-tS-pay" kind="show" id="vdd-uU-7pc"/>
                                 </connections>
                             </button>
@@ -292,7 +354,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="MEI-VW-2w6"/>
         <segue reference="vdd-uU-7pc"/>
+        <segue reference="89F-lO-G6E"/>
     </inferredMetricsTieBreakers>
 </document>

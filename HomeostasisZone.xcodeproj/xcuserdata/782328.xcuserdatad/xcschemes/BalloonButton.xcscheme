@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BA2501181C5FC10E00AA204E"
-               BuildableName = "BalloonButton.app"
-               BlueprintName = "BalloonButton"
-               ReferencedContainer = "container:BalloonButton.xcodeproj">
+               BuildableName = "HomeostasisZone.app"
+               BlueprintName = "HomeostasisZone"
+               ReferencedContainer = "container:HomeostasisZone.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BA2501301C5FC10E00AA204E"
-               BuildableName = "BalloonButtonTests.xctest"
-               BlueprintName = "BalloonButtonTests"
-               ReferencedContainer = "container:BalloonButton.xcodeproj">
+               BuildableName = "HomeostasisZone.xctest"
+               BlueprintName = "HomeostasisZoneTests"
+               ReferencedContainer = "container:HomeostasisZone.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BA2501181C5FC10E00AA204E"
-            BuildableName = "BalloonButton.app"
-            BlueprintName = "BalloonButton"
-            ReferencedContainer = "container:BalloonButton.xcodeproj">
+            BuildableName = "HomeostasisZone.app"
+            BlueprintName = "HomeostasisZone"
+            ReferencedContainer = "container:HomeostasisZone.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BA2501181C5FC10E00AA204E"
-            BuildableName = "BalloonButton.app"
-            BlueprintName = "BalloonButton"
-            ReferencedContainer = "container:BalloonButton.xcodeproj">
+            BuildableName = "HomeostasisZone.app"
+            BlueprintName = "HomeostasisZone"
+            ReferencedContainer = "container:HomeostasisZone.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BA2501181C5FC10E00AA204E"
-            BuildableName = "BalloonButton.app"
-            BlueprintName = "BalloonButton"
-            ReferencedContainer = "container:BalloonButton.xcodeproj">
+            BuildableName = "HomeostasisZone.app"
+            BlueprintName = "HomeostasisZone"
+            ReferencedContainer = "container:HomeostasisZone.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

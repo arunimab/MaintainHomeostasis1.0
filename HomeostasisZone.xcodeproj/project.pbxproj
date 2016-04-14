@@ -82,7 +82,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BA2501191C5FC10E00AA204E /* BalloonButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalloonButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA2501191C5FC10E00AA204E /* HomeostasisZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeostasisZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA25011C1C5FC10E00AA204E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA25011E1C5FC10E00AA204E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		BA2501201C5FC10E00AA204E /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		BA2501271C5FC10E00AA204E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA25012A1C5FC10E00AA204E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA25012C1C5FC10E00AA204E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA2501311C5FC10E00AA204E /* BalloonButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BalloonButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA2501311C5FC10E00AA204E /* HomeostasisZone.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeostasisZone.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA2501351C5FC10E00AA204E /* BalloonButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonButtonTests.swift; sourceTree = "<group>"; };
 		BA2501371C5FC10E00AA204E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA34031E1C9865C6002AE9BF /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/ios-charts-master/Charts/Charts.xcodeproj"; sourceTree = "<group>"; };
@@ -123,8 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				BA34031E1C9865C6002AE9BF /* Charts.xcodeproj */,
-				BA25011B1C5FC10E00AA204E /* BalloonButton */,
-				BA2501341C5FC10E00AA204E /* BalloonButtonTests */,
+				BA25011B1C5FC10E00AA204E /* HomeostasisZone */,
+				BA2501341C5FC10E00AA204E /* HomeostasisZoneTests */,
 				BA25011A1C5FC10E00AA204E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -132,13 +132,13 @@
 		BA25011A1C5FC10E00AA204E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BA2501191C5FC10E00AA204E /* BalloonButton.app */,
-				BA2501311C5FC10E00AA204E /* BalloonButtonTests.xctest */,
+				BA2501191C5FC10E00AA204E /* HomeostasisZone.app */,
+				BA2501311C5FC10E00AA204E /* HomeostasisZone.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BA25011B1C5FC10E00AA204E /* BalloonButton */ = {
+		BA25011B1C5FC10E00AA204E /* HomeostasisZone */ = {
 			isa = PBXGroup;
 			children = (
 				BA25011C1C5FC10E00AA204E /* AppDelegate.swift */,
@@ -153,15 +153,17 @@
 				BA25012C1C5FC10E00AA204E /* Info.plist */,
 				BA3403321C986604002AE9BF /* Graphing.swift */,
 			);
+			name = HomeostasisZone;
 			path = BalloonButton;
 			sourceTree = "<group>";
 		};
-		BA2501341C5FC10E00AA204E /* BalloonButtonTests */ = {
+		BA2501341C5FC10E00AA204E /* HomeostasisZoneTests */ = {
 			isa = PBXGroup;
 			children = (
 				BA2501351C5FC10E00AA204E /* BalloonButtonTests.swift */,
 				BA2501371C5FC10E00AA204E /* Info.plist */,
 			);
+			name = HomeostasisZoneTests;
 			path = BalloonButtonTests;
 			sourceTree = "<group>";
 		};
@@ -179,9 +181,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BA2501181C5FC10E00AA204E /* BalloonButton */ = {
+		BA2501181C5FC10E00AA204E /* HomeostasisZone */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BA25013A1C5FC10E00AA204E /* Build configuration list for PBXNativeTarget "BalloonButton" */;
+			buildConfigurationList = BA25013A1C5FC10E00AA204E /* Build configuration list for PBXNativeTarget "HomeostasisZone" */;
 			buildPhases = (
 				BA2501151C5FC10E00AA204E /* Sources */,
 				BA2501161C5FC10E00AA204E /* Frameworks */,
@@ -193,14 +195,14 @@
 			dependencies = (
 				BAF5EFC31C9867B400B27F2F /* PBXTargetDependency */,
 			);
-			name = BalloonButton;
+			name = HomeostasisZone;
 			productName = BalloonButton;
-			productReference = BA2501191C5FC10E00AA204E /* BalloonButton.app */;
+			productReference = BA2501191C5FC10E00AA204E /* HomeostasisZone.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BA2501301C5FC10E00AA204E /* BalloonButtonTests */ = {
+		BA2501301C5FC10E00AA204E /* HomeostasisZoneTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BA25013D1C5FC10E00AA204E /* Build configuration list for PBXNativeTarget "BalloonButtonTests" */;
+			buildConfigurationList = BA25013D1C5FC10E00AA204E /* Build configuration list for PBXNativeTarget "HomeostasisZoneTests" */;
 			buildPhases = (
 				BA25012D1C5FC10E00AA204E /* Sources */,
 				BA25012E1C5FC10E00AA204E /* Frameworks */,
@@ -211,9 +213,9 @@
 			dependencies = (
 				BA2501331C5FC10E00AA204E /* PBXTargetDependency */,
 			);
-			name = BalloonButtonTests;
+			name = HomeostasisZoneTests;
 			productName = BalloonButtonTests;
-			productReference = BA2501311C5FC10E00AA204E /* BalloonButtonTests.xctest */;
+			productReference = BA2501311C5FC10E00AA204E /* HomeostasisZone.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -236,7 +238,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BA2501141C5FC10E00AA204E /* Build configuration list for PBXProject "BalloonButton" */;
+			buildConfigurationList = BA2501141C5FC10E00AA204E /* Build configuration list for PBXProject "HomeostasisZone" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -255,8 +257,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				BA2501181C5FC10E00AA204E /* BalloonButton */,
-				BA2501301C5FC10E00AA204E /* BalloonButtonTests */,
+				BA2501181C5FC10E00AA204E /* HomeostasisZone */,
+				BA2501301C5FC10E00AA204E /* HomeostasisZoneTests */,
 			);
 		};
 /* End PBXProject section */
@@ -340,7 +342,7 @@
 /* Begin PBXTargetDependency section */
 		BA2501331C5FC10E00AA204E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BA2501181C5FC10E00AA204E /* BalloonButton */;
+			target = BA2501181C5FC10E00AA204E /* HomeostasisZone */;
 			targetProxy = BA2501321C5FC10E00AA204E /* PBXContainerItemProxy */;
 		};
 		BAF5EFC31C9867B400B27F2F /* PBXTargetDependency */ = {
@@ -463,8 +465,8 @@
 				INFOPLIST_FILE = BalloonButton/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ISD-196.BalloonButton";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "ISD-196.HomeostasisZone";
+				PRODUCT_NAME = HomeostasisZone;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -480,8 +482,8 @@
 				INFOPLIST_FILE = BalloonButton/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ISD-196.BalloonButton";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "ISD-196.HomeostasisZone";
+				PRODUCT_NAME = HomeostasisZone;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -496,8 +498,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ISD-196.BalloonButtonTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BalloonButton.app/BalloonButton";
+				PRODUCT_NAME = HomeostasisZone;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HomeostasisZone.app/HomeostasisZone";
 			};
 			name = Debug;
 		};
@@ -509,15 +511,15 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ISD-196.BalloonButtonTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BalloonButton.app/BalloonButton";
+				PRODUCT_NAME = HomeostasisZone;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HomeostasisZone.app/HomeostasisZone";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BA2501141C5FC10E00AA204E /* Build configuration list for PBXProject "BalloonButton" */ = {
+		BA2501141C5FC10E00AA204E /* Build configuration list for PBXProject "HomeostasisZone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BA2501381C5FC10E00AA204E /* Debug */,
@@ -526,7 +528,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BA25013A1C5FC10E00AA204E /* Build configuration list for PBXNativeTarget "BalloonButton" */ = {
+		BA25013A1C5FC10E00AA204E /* Build configuration list for PBXNativeTarget "HomeostasisZone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BA25013B1C5FC10E00AA204E /* Debug */,
@@ -535,7 +537,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BA25013D1C5FC10E00AA204E /* Build configuration list for PBXNativeTarget "BalloonButtonTests" */ = {
+		BA25013D1C5FC10E00AA204E /* Build configuration list for PBXNativeTarget "HomeostasisZoneTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BA25013E1C5FC10E00AA204E /* Debug */,
