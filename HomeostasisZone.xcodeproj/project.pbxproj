@@ -18,6 +18,7 @@
 		BA3403331C986604002AE9BF /* Graphing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3403321C986604002AE9BF /* Graphing.swift */; };
 		BA60FD211C738CC000C9ACCF /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA60FD201C738CC000C9ACCF /* Settings.swift */; };
 		BA60FD231C738CF700C9ACCF /* DataProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA60FD221C738CF700C9ACCF /* DataProcessing.swift */; };
+		BADA1DEF1CBFF6C200736BA4 /* FailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADA1DEE1CBFF6C200736BA4 /* FailScreen.swift */; };
 		BAF5EFC01C9867B400B27F2F /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3403261C9865C7002AE9BF /* Charts.framework */; };
 		BAF5EFC11C9867B400B27F2F /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BA3403261C9865C7002AE9BF /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -98,6 +99,7 @@
 		BA3403321C986604002AE9BF /* Graphing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graphing.swift; sourceTree = "<group>"; };
 		BA60FD201C738CC000C9ACCF /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		BA60FD221C738CF700C9ACCF /* DataProcessing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProcessing.swift; sourceTree = "<group>"; };
+		BADA1DEE1CBFF6C200736BA4 /* FailScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FailScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				BA25011C1C5FC10E00AA204E /* AppDelegate.swift */,
 				BA25011E1C5FC10E00AA204E /* GameScene.sks */,
 				BA2501201C5FC10E00AA204E /* GameScene.swift */,
+				BADA1DEE1CBFF6C200736BA4 /* FailScreen.swift */,
 				BA2501221C5FC10E00AA204E /* GameViewController.swift */,
 				BA2501241C5FC10E00AA204E /* Main.storyboard */,
 				BA60FD201C738CC000C9ACCF /* Settings.swift */,
@@ -325,6 +328,7 @@
 				BA2501231C5FC10E00AA204E /* GameViewController.swift in Sources */,
 				BA25011D1C5FC10E00AA204E /* AppDelegate.swift in Sources */,
 				BA60FD231C738CF700C9ACCF /* DataProcessing.swift in Sources */,
+				BADA1DEF1CBFF6C200736BA4 /* FailScreen.swift in Sources */,
 				BA60FD211C738CC000C9ACCF /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -24,6 +24,7 @@ class GameScene: SKScene {
     var scaleFactor1 = retrieveDouble("airPump1")
     var scaleFactor2 = retrieveDouble("airPump2")
     var totalScaleFactor = 0.0
+    var viewController: UIViewController?
     
     //Timer Variables
     var defaultseconds = Int(retrieveDouble("timer")!)
@@ -128,6 +129,7 @@ class GameScene: SKScene {
             timer.invalidate()
             timerRunning = false
             timerCount = defaultseconds
+            openGraphViewController()
         }
     }
     
@@ -163,7 +165,7 @@ class GameScene: SKScene {
                     timerCount = defaultseconds
                     
                     //Bring up fail screen
-                    //openViewController()
+                    self.openFailViewController()
                 }
                 
                 //Scale Balloon
@@ -201,7 +203,7 @@ class GameScene: SKScene {
                     timerCount = defaultseconds
                     
                     //Bring up fail screen
-                    //openViewController()
+                    self.openFailViewController()
 
                 }
                 
@@ -239,9 +241,12 @@ class GameScene: SKScene {
         /* Called before each frame is rendered */
     }
     
-    func openViewController () {
-        var vc: UIViewController = UIViewController()
-        vc = self.view!.window!.rootViewController!
-        vc.performSegueWithIdentifier("show", sender: vc)
+    func openFailViewController () {
+        let vc: UIViewController = UIViewController()
+        self.viewController!.performSegueWithIdentifier("showFail", sender: vc)
+    }
+    func openGraphViewController () {
+        let vc: UIViewController = UIViewController()
+        self.viewController!.performSegueWithIdentifier("showGraph", sender: vc)
     }
 }

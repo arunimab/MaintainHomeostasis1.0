@@ -12,8 +12,12 @@ import AVFoundation
 
 class Settings: UIViewController{
     
-    @IBOutlet weak var airPump1: UITextField!
-    @IBOutlet weak var airPump2: UITextField!
+
+    @IBOutlet weak var slider1: UISlider!
+    @IBOutlet weak var label1: UILabel!
+    
+    @IBOutlet weak var slider2: UISlider!
+    @IBOutlet weak var label2: UILabel!
     
     //timer start here
     
@@ -39,15 +43,29 @@ class Settings: UIViewController{
     }
     //timer end here
     
-    @IBAction func airPump1(sender: UITextField) {
-        let airPumpScale1 = Double(airPump1.text!)
-        storeDouble("airPump1", value: airPumpScale1!)
+    @IBAction func sliderValueChanged1(sender: UISlider) {
+        //Read in value from slider
+        let currentValue = sender.value
+        //Round value
+        let roundedValue = round(1000 * currentValue) / 1000
+        //Store for GameScene
+        storeDouble("airPump1", value: Double(roundedValue))
+        //Display in label
+        label1.text = "\(roundedValue)"
     }
     
-    @IBAction func airPump2(sender: UITextField) {
-        let airPumpScale2 = Double(airPump2.text!)
-        storeDouble("airPump2", value: airPumpScale2!)
+    @IBAction func sliderValueChanged2(sender: UISlider) {
+        //Read in value from slider
+        let currentValue = sender.value
+        //Round value
+        let roundedValue = round(1000 * currentValue) / 1000
+        //Store for GameScene
+        storeDouble("airPump2", value: Double(roundedValue))
+        //Display in label
+        label2.text = "\(roundedValue)"
     }
+    
+    
     
     override func viewDidLoad(){
         

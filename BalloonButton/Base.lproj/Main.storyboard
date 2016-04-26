@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgv-8t-fJh">
-                                <rect key="frame" x="468" y="20" width="83" height="30"/>
+                                <rect key="frame" x="259" y="20" width="83" height="30"/>
                                 <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="22"/>
                                 <state key="normal" title="Settings">
                                     <color key="titleColor" red="1" green="0.0" blue="0.092421955149999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -27,27 +27,21 @@
                                     <segue destination="m4b-tS-pay" kind="show" id="ctc-v1-oLl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2et-Ip-vlz">
-                                <rect key="frame" x="307" y="16" width="99" height="38"/>
-                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="22"/>
-                                <state key="normal" title="Graphing">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.092421955149999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="OXk-bu-dQG" kind="show" id="vrg-nE-Le6"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2et-Ip-vlz" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="HNX-WX-Rv7"/>
+                            <constraint firstItem="fgv-8t-fJh" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="Osw-WE-a2N"/>
                             <constraint firstItem="fgv-8t-fJh" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" constant="400" id="ZSh-kz-T4U"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="Ajj-kC-KP8" kind="show" identifier="showFail" id="vAq-se-y9t"/>
+                        <segue destination="OXk-bu-dQG" kind="show" identifier="showGraph" id="6jr-rc-gI3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="365" y="350"/>
+            <point key="canvasLocation" x="365" y="290"/>
         </scene>
         <!--Graphing-->
         <scene sceneID="Uzg-gI-ktg">
@@ -102,7 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qNO-np-hXN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="365" y="1027"/>
+            <point key="canvasLocation" x="365" y="1057"/>
         </scene>
         <!--Settings-->
         <scene sceneID="oFz-hC-avV">
@@ -178,28 +172,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=".025" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cIY-wc-qET">
-                                <rect key="frame" x="155" y="190" width="161" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="airPump1:" destination="m4b-tS-pay" eventType="editingDidEnd" id="vTb-lN-aHB"/>
-                                </connections>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Air Pump 2:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3o7-a0-H9Q">
                                 <rect key="frame" x="20" y="232" width="138" height="37"/>
                                 <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=".025" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rAZ-cf-qcC">
-                                <rect key="frame" x="155" y="236" width="161" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="airPump2:" destination="m4b-tS-pay" eventType="editingDidEnd" id="sJy-7g-LFj"/>
-                                </connections>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MiR-Ub-fwM">
                                 <rect key="frame" x="212" y="326" width="176" height="64"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -212,6 +190,33 @@
                                     <segue destination="BV1-FR-VrT" kind="show" id="MEI-VW-2w6"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.025000000000000001" minValue="0.01" maxValue="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="kWK-CU-pvb">
+                                <rect key="frame" x="164" y="236" width="154" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="v5k-wg-XG3"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderValueChanged2:" destination="m4b-tS-pay" eventType="valueChanged" id="4Jo-wm-AKE"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.025" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ery-xi-TTh">
+                                <rect key="frame" x="316" y="232" width="104" height="37"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.025" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bX3-6R-LYl">
+                                <rect key="frame" x="316" y="187" width="104" height="37"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.025000000000000001" minValue="0.01" maxValue="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="x6U-sq-Ui4">
+                                <rect key="frame" x="164" y="191" width="154" height="31"/>
+                                <connections>
+                                    <action selector="sliderValueChanged1:" destination="m4b-tS-pay" eventType="valueChanged" id="tiR-Je-2pX"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="0.4271270633" green="0.65514278410000004" blue="1" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
@@ -222,19 +227,21 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="airPump1" destination="cIY-wc-qET" id="U8F-Rd-rjy"/>
-                        <outlet property="airPump2" destination="rAZ-cf-qcC" id="cda-6f-XGH"/>
+                        <outlet property="label1" destination="bX3-6R-LYl" id="spO-re-4CA"/>
+                        <outlet property="label2" destination="Ery-xi-TTh" id="jiF-G4-X38"/>
+                        <outlet property="slider1" destination="x6U-sq-Ui4" id="xX6-De-6Lp"/>
+                        <outlet property="slider2" destination="kWK-CU-pvb" id="Jxp-Kv-bUF"/>
                         <outlet property="timerIndicatorLabel" destination="2BL-2D-TkP" id="DuM-sJ-n4n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pP6-or-gO7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1182" y="366"/>
+            <point key="canvasLocation" x="1182" y="328"/>
         </scene>
-        <!--View Controller-->
+        <!--Fail Screen-->
         <scene sceneID="V9F-gG-qrr">
             <objects>
-                <viewController storyboardIdentifier="failScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ajj-kC-KP8" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="failScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ajj-kC-KP8" customClass="FailScreen" customModule="HomeostasisZone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="k1f-Sc-NVP"/>
                         <viewControllerLayoutGuide type="bottom" id="zSN-iP-NWD"/>
@@ -243,26 +250,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FAIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4r-Lj-Pge">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="FAIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4r-Lj-Pge">
                                 <rect key="frame" x="191" y="124" width="219" height="74"/>
                                 <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="63"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Homeostasis was NOT Maintained" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tck-Xe-hrr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Homeostasis was NOT Maintained" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tck-Xe-hrr">
                                 <rect key="frame" x="1" y="188" width="598" height="53"/>
                                 <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="40"/>
                                 <color key="textColor" red="1" green="0.91857540930000003" blue="0.57847036949999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8o-jY-4zo">
-                                <rect key="frame" x="159" y="265" width="284" height="70"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="50"/>
-                                <state key="normal" title="TRY AGAIN">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.092421955149999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dC0-er-CPp">
                                 <rect key="frame" x="212" y="360" width="177" height="70"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -270,27 +269,34 @@
                                 <state key="normal" title="HOME">
                                     <color key="titleColor" red="1" green="0.0" blue="0.092421955149999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Fe0-Ye-xNw" kind="show" id="NPR-cV-nsR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8o-jY-4zo">
+                                <rect key="frame" x="158" y="265" width="284" height="70"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="50"/>
+                                <state key="normal" title="TRY AGAIN">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.092421955149999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="show" id="FwO-c3-eUO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.34268348437700402" blue="0.34503749580391052" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="dC0-er-CPp" firstAttribute="top" secondItem="k8o-jY-4zo" secondAttribute="bottom" constant="25" id="1o3-Bp-rc9"/>
-                            <constraint firstItem="dC0-er-CPp" firstAttribute="centerX" secondItem="Dms-nL-dpf" secondAttribute="centerX" id="9eV-JK-ZfZ"/>
-                            <constraint firstItem="l4r-Lj-Pge" firstAttribute="top" secondItem="k1f-Sc-NVP" secondAttribute="bottom" constant="104" id="B88-vI-hbO"/>
-                            <constraint firstItem="tck-Xe-hrr" firstAttribute="centerX" secondItem="Dms-nL-dpf" secondAttribute="centerX" id="Jmq-1y-KUk"/>
-                            <constraint firstItem="zSN-iP-NWD" firstAttribute="top" secondItem="dC0-er-CPp" secondAttribute="bottom" constant="170" id="Rx2-AW-AHC"/>
-                            <constraint firstItem="l4r-Lj-Pge" firstAttribute="centerX" secondItem="Dms-nL-dpf" secondAttribute="centerX" id="WSr-DM-c8F"/>
-                            <constraint firstItem="tck-Xe-hrr" firstAttribute="top" secondItem="k1f-Sc-NVP" secondAttribute="bottom" constant="168" id="dnE-ww-JVi"/>
-                            <constraint firstItem="dC0-er-CPp" firstAttribute="top" secondItem="k8o-jY-4zo" secondAttribute="bottom" constant="25" id="jYX-BF-49v"/>
-                            <constraint firstItem="zSN-iP-NWD" firstAttribute="top" secondItem="l4r-Lj-Pge" secondAttribute="bottom" constant="402" id="rhj-LJ-1Vf"/>
-                            <constraint firstItem="k8o-jY-4zo" firstAttribute="centerX" secondItem="Dms-nL-dpf" secondAttribute="centerX" id="xyE-nK-XOo"/>
-                            <constraint firstItem="k8o-jY-4zo" firstAttribute="top" secondItem="tck-Xe-hrr" secondAttribute="bottom" constant="24" id="yEc-6d-bTi"/>
+                            <constraint firstItem="l4r-Lj-Pge" firstAttribute="centerX" secondItem="Dms-nL-dpf" secondAttribute="centerX" id="NMV-JH-mLj"/>
+                            <constraint firstItem="tck-Xe-hrr" firstAttribute="centerX" secondItem="Dms-nL-dpf" secondAttribute="centerX" id="P0r-Wv-rAS"/>
+                            <constraint firstItem="k8o-jY-4zo" firstAttribute="centerX" secondItem="Dms-nL-dpf" secondAttribute="centerX" id="jii-pj-hJy"/>
+                            <constraint firstItem="dC0-er-CPp" firstAttribute="centerX" secondItem="Dms-nL-dpf" secondAttribute="centerX" id="s8q-bU-aSC"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="08V-n2-jQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="742" y="1730"/>
+            <point key="canvasLocation" x="772" y="1780"/>
         </scene>
         <!--Main Menu-->
         <scene sceneID="Wzn-oG-zqh">
@@ -338,10 +344,18 @@
                                     <segue destination="m4b-tS-pay" kind="show" id="vdd-uU-7pc"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Version 1.1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzg-Lw-UyO">
+                                <rect key="frame" x="227" y="567" width="144" height="29"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.91857540930000003" blue="0.57847036949999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="yzg-Lw-UyO" firstAttribute="centerX" secondItem="i4A-vr-Ude" secondAttribute="centerX" id="JKt-Kf-m2e"/>
                             <constraint firstItem="nHf-uR-mGy" firstAttribute="centerX" secondItem="i4A-vr-Ude" secondAttribute="centerX" id="OFG-Xh-ofk"/>
+                            <constraint firstItem="8Go-Lb-0pX" firstAttribute="top" secondItem="yzg-Lw-UyO" secondAttribute="bottom" constant="8" id="ZJK-K4-KxP"/>
                             <constraint firstItem="4ht-md-ZDc" firstAttribute="centerX" secondItem="i4A-vr-Ude" secondAttribute="centerX" id="jGn-LL-2KH"/>
                             <constraint firstItem="yux-Ny-zq5" firstAttribute="centerX" secondItem="i4A-vr-Ude" secondAttribute="centerX" id="yUZ-qs-FAl"/>
                             <constraint firstItem="A3o-UE-Gs0" firstAttribute="centerX" secondItem="i4A-vr-Ude" secondAttribute="centerX" id="zGS-cn-NgT"/>
@@ -350,11 +364,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uSf-rT-dLG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1166" y="1042"/>
+            <point key="canvasLocation" x="1182" y="1057"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vdd-uU-7pc"/>
         <segue reference="89F-lO-G6E"/>
+        <segue reference="ctc-v1-oLl"/>
+        <segue reference="KzH-go-G58"/>
     </inferredMetricsTieBreakers>
 </document>
