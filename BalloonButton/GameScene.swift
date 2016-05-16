@@ -36,6 +36,10 @@ class GameScene: SKScene {
     var timerRunning = false //tell xCode if our timer is running
     var timer = NSTimer()
     
+    //Graph Recording Variables
+    var sizeArray = [Double] ()
+    var secondArray = [Double] ()
+    
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
         
@@ -80,8 +84,11 @@ class GameScene: SKScene {
         myButton2.xScale = 1.25
         myButton2.yScale = 1.25
         
+        //Set Up Graph Recording Array
+        sizeArray = [Double] (count: timerCount, repeatedValue: 0.0)
         
-        
+        //Set UP "secondsArray"
+        secondArray = [Double] (count: timerCount, repeatedValue: 0.0)
         
         
         self.addChild(mySetPoint)
@@ -115,7 +122,6 @@ class GameScene: SKScene {
             
         }
     }*/
-
     
     func timerCountDown() {
         
@@ -127,6 +133,9 @@ class GameScene: SKScene {
         
         if myTimer.text == "00:00" {
             timer.invalidate()
+            //store arrays for graph
+            storeDoubleArray("secondArray", valArray: secondArray)
+            storeDoubleArray("sizeArray", valArray: sizeArray)
             timerRunning = false
             timerCount = defaultseconds
             openGraphViewController()
@@ -135,6 +144,10 @@ class GameScene: SKScene {
     
     func startTimer(){
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(GameScene.timerCountDown), userInfo: nil, repeats: true)
+    }
+    
+    func addSizes(){
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(GameScene.addSizeToArray), userInfo: nil, repeats: true)
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
@@ -223,6 +236,7 @@ class GameScene: SKScene {
                 startTimer()
                 timerRunning = true
                 constantOutput()
+                addSizes()
             }
         }
         //if mySettings.containsPoint(touch.locationInNode(self)) {
@@ -230,11 +244,21 @@ class GameScene: SKScene {
         //}
     }
     
-    //NEED TO FIGURE THIS OUT!! 3/8/2016
     func constantOutput () {
         
         let scaleAction = SKAction.scaleTo(0.0, duration: Double(timerCount))
         myBalloon.runAction(scaleAction, withKey: "constantOutput")
+    }
+    
+    func addSizeToArray () {
+        //Beginning adding values to sizeArray
+        let secondCount = 0
+        for secondCount in 0...timerCount {
+            sizeArray[secondCount] = totalScaleFactor
+            secondArray[secondCount] = Double(secondCount)
+            print("sizeArray is: ")
+            print(sizeArray)
+        }
     }
     
     override func update(currentTime: CFTimeInterval) {

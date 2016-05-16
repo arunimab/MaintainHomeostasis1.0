@@ -24,7 +24,7 @@ class Graphing: UIViewController, ChartViewDelegate{
     var animateTheChart = true
     
     //adding the set point
-    let ll = ChartLimitLine(limit: 10.0, label: "Set Point")
+    let ll = ChartLimitLine(limit: 1.65, label: "Set Point")
     
     //Function to create the chart
     func setChart(dataPoints: [Double], values: [Double]){
@@ -98,8 +98,8 @@ class Graphing: UIViewController, ChartViewDelegate{
         
         
         //anything additional setup after loading the view here:
-        seconds = [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6]
-        sizesofBalloon = [3.0, 6.0, 10.0, 11.0, 13.0, 11.0, 9.0]
+        seconds = retrieveDoubleArray("secondArray")
+        sizesofBalloon = retrieveDoubleArray("sizeArray")
         
         setChart(seconds, values: sizesofBalloon)
     }
